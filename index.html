@@ -63,7 +63,7 @@
 
                     <div class="widget-container-half">
                         <!-- element bar graph will attach to -->
-                        <canvas id="dialy-chart"></canvas>
+                        <canvas id="daily-chart"></canvas>
                     </div>
                 </section>
                 <div class="social-container">
@@ -151,7 +151,32 @@
                 <section class="settings">
                     <h3>Settings</h3>
                     <!-- custom CSS toggle code-->
+                    <label class="switch-light switch-candy" onclick="">
+                        <input type="checkbox">
+                        <strong>
+                            Send email notifications
+                        </strong>
+                    
+                        <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
                     <!-- custom CSS toggle code-->
+                    <label class="switch-light switch-candy" onclick="">
+                        <input type="checkbox">
+                    
+                        <strong>
+                            Set profile to public
+                        </strong>
+                    
+                        <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
                     <select class="form-field" id="timezone">
                         <option disabled selected>Select a Timezone</option>
                         <option>Eastern</option>
@@ -164,21 +189,6 @@
                 </section>
             </main>
         </div>
-        <fieldset>
-            <legend>View</legend>
-            <div class="switch-toggle switch-candy">
-                <input id="week" name="view" type="radio" checked>
-                <label for="week" onclick="">Week</label>
-        
-                <input id="month" name="view" type="radio">
-                <label for="month" onclick="">Month</label>
-        
-                <input id="day" name="view" type="radio">
-                <label for="day" onclick="">Day</label>
-        
-                <a></a>
-            </div>
-        </fieldset>
         <script src="js/app.js"></script>
     </body>
 </html>

@@ -57,6 +57,21 @@ main {
     width: 95vh;
 }
 
+.switch-candy {
+    color: #fff;
+    background-color: #8a2be8;
+}
+
+.button-primary,
+.button-disabled {
+    width: 25%;
+    height: 50px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #8a2be8;
+    border-radius: 15px;
+}
+
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 55px 1fr;

@@ -1,3 +1,4 @@
+/* Base Styles -------------------- */
 * {
     box-sizing: border-box;
 }
@@ -11,64 +12,21 @@ body {
 }
 
 h1 {
-    margin-left: 20px;
+    margin: 0 auto 0 0;
 }
 
-.main-nav {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    margin: 0;
+h2 {
+    margin-left: 15px;
 }
 
-#icon-bell {
-    fill: #fff;
-    height: 25px;
-    width: 25px;
+h3 {
+   margin-left: 15px; 
 }
 
-#dashboard-icon,
-#member-icon,
-#visits-icon,
-#settings-icon {
-    margin: 20px;
-    height: 40px;
-    width: 30px;
+input {
+    margin-right: 15px;
+    width: 100%;
 }
-
-.member-image {
-    margin: 15px;
-    border-left: 1px solid #000;
-}
-
-.profile-image {
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
-    display: flex;
-}
-
-.grid-container {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 70px 1fr;
-    grid-template-areas: 
-        "header"
-        "navigation"
-        "main";
-
-}
-
-.app-container {
-    height: 50px;
-    display: grid;
-    grid-template-columns: 800px 150px 2fr;
-    grid-template-rows: 1fr;
-}
-
 
 header {
     background-color: #8a2be8;
@@ -85,47 +43,134 @@ main {
     
 }
 
-.main {
-    display: grid;
+ul{
+    list-style-type: none;
+    margin-right: 15px;
 }
 
-.bell-icon {
+li {
+    display: inline-block;
+    padding-left: 15px;
+}
+ /* Main Styles --------------------- */
+#icon-bell {
+    height: 15px;
+}
+
+#dashboard-icon,
+#member-icon,
+#visits-icon,
+#settings-icon {
+    margin: 20px;
     height: 40px;
+    width: 30px;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 70px 1fr;
+    grid-template-areas: 
+        "header"
+        "navigation"
+        "main";
+}
+
+.app-container,
+.member-image {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+.app-container {
+    padding:  0 15px;
+    height: 100%;
+}
+
+.member-image {
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #000;
+}
+
+.profile-image {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.members-image {
+    width: 40px;
+    border-radius: 25%;
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header-search {
+    background-color: #778899;
+    padding-left: 100px;
+    /* padding-bottom: 10px; */
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-bottom-left-radius: 5px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .social {
-    height: 9.375em;
-    width: 9.375em;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #778899;
 }
 
-.widget-container-full,
-.widget-container-half {
-    width: 95vh;
+.members,
+.members-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.switch-candy {
-    color: #fff;
-    background-color: #8a2be8;
+
+.traffic-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button-primary,
-.button-disabled {
-    width: 25%;
-    height: 50px;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #8a2be8;
-    border-radius: 15px;
-}
+    /* Media Queries --------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
     .grid-container {
         grid-template-rows: 70px 75px 1fr;
     }
     .main {
         grid-template-columns: 50%;
+    }
+
+    .primary-container {
+        display: grid;
+        grid-template-columns: 100% 1fr;
+        grid-template-rows: 100px 100px 1fr;
     }
 
     .main-header {
@@ -163,15 +208,15 @@ main {
     }
 
     .widget-container-full {
-        width: 90vh;
+        width: 90vw;
     }
 
     .widget-container-half {
-        width: 45vh;
+        width: 45vw;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
     header {
         grid-area: head;
     }
@@ -185,11 +230,18 @@ main {
     }
 
     .grid-container {
-        grid-template-columns: 80px 1fr;
-        grid-template-rows: 60px 1fr;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 70px 1fr;
         grid-template-areas: 
             "head head"
             "nav main";
     }
-
 }
+  /* Pseudo Styles --------------------- */
+ 
+  li:hover {
+      background-color:#32cd32;
+  }
+  li:active {
+      background-color: #40f740;
+  }

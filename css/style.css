@@ -103,7 +103,7 @@ li {
 .members-image {
     width: 40px;
     border-radius: 25%;
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .navigation {
@@ -142,9 +142,15 @@ li {
     background-color: #778899;
 }
 
-.members,
+.members {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .members-container {
     display: flex;
+    width: 50%;
     align-items: center;
     justify-content: space-between;
 }

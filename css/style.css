@@ -57,6 +57,16 @@ li {
     height: 15px;
 }
 
+#alert {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin: 15px;
+    background-color: #8a2be8;
+    color: #fff;
+    border-radius: 5px;
+}
+
 #dashboard-icon,
 #member-icon,
 #visits-icon,
@@ -153,6 +163,11 @@ li {
     display: flex;
 }
 
+.daily {
+    display: flex;
+    flex-direction: column;
+}
+
     /* Media Queries --------------------- */
 
 @media (min-width: 768px){
@@ -167,6 +182,7 @@ li {
         flex-direction: column;
         justify-content: flex-start;
     }
+
 
     .daily,
     .members,
@@ -197,59 +213,60 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
+    }   
 
-.social-text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+    .social-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-p {
-    padding-right: 15px;
-}
+    p {
+        padding-right: 15px;
+    }
 
-.social-image {
-    padding: 15px;
-}
+    .social-image {
+        padding: 15px;
+    }
 
-.members {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    .members {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-.members-container {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-}
+    .members-container {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.widget-container {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
+    .widget-container {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 
-.form-field {
-    width: 50%;
-    padding: 15px;
-}
+    .form-field {
+        width: 50%;
+        padding: 15px;
+    }
 
-.form-area {
-    width: 50%;
-    height: 100px;
-    margin: 20px 0 20px 0;
-    padding: 15px;
-}
+    .form-area {
+        width: 50%;
+        height: 100px;
+        margin: 20px 0 20px 0;
+        padding: 15px;
+    }
 
-.button-primary {
-    width: 50%;
-    height: 30px;
-}
+    .button-primary {
+        width: 50%;
+        height: 30px;
+    }
+
 }
 
 @media (min-width: 1024px){

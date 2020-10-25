@@ -114,6 +114,7 @@ li {
     width: 40px;
     border-radius: 25%;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .navigation {
@@ -189,6 +190,52 @@ li {
 
 .mobile-chart {
     border-left: 1px solid #d3d3d3;
+}
+
+.members-container,
+.activity-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.members-text p {
+    font-size: .9em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.members-text a {
+    font-size: .75em;
+    color: #d3ded3;
+}
+
+.activity-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.activity-text p:first-child {
+    font-size: .9em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.activity-text {
+    margin: 5px 20px 5px 0;
+}
+
+.activity-time {
+    font-size: .75em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.date,
+.arrow {
+    margin-left: auto;
+    font-size: .9em;
 }
 
     /* Media Queries --------------------- */
@@ -304,6 +351,9 @@ li {
     .button-primary {
         width: 50%;
         height: 30px;
+        color: #fff;
+        background-color: #8a2be8;
+        border-radius: 5px;
     }
 
 }

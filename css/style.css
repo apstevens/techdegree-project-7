@@ -145,11 +145,30 @@ li {
     margin: auto 15px auto auto;
 }
 
-.social {
-    width: 200px;
-    height: 100px;
-    padding: 15px;
+.social-container-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-container {
+    display: flex;
+    flex-basis: 200px;
+    justify-content: space-around;
+    align-items: center;
     background-color: #778899;
+    margin: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    }
+
+.social-image {
+    background-color: lavender;
+    border-radius: 50%;
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
 }
 
 .traffic-header {
@@ -159,13 +178,17 @@ li {
     justify-content: space-between;
 }
 
-.social-secondary-container {
-    display: flex;
-}
 
 .daily {
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+}
+
+.mobile-chart {
+    border-left: 1px solid #d3d3d3;
 }
 
     /* Media Queries --------------------- */
@@ -183,6 +206,9 @@ li {
         justify-content: flex-start;
     }
 
+    .daily {
+    flex-direction: row;
+}
 
     .daily,
     .members,
@@ -207,26 +233,39 @@ li {
 
     .widget-container-half {
         width: 45vw;
+        border-left: 1px solid #d3d3d3;
     }
 
-    .social-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    }   
+    svg {
+        width: 30px;
+        height: auto;
+    }
 
     .social-text {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .social-text p:first-child {
+        color: lavender;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: .75em;
+
+    }
+
+    .social-text p:last-child {
+        font-size: 1.7em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: lighter;
     }
 
     p {
         padding-right: 15px;
-    }
-
-    .social-image {
-        padding: 15px;
     }
 
     .members {

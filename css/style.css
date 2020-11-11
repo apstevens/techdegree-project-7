@@ -57,13 +57,19 @@ li {
 
 #alert {
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     width: auto;
     margin: 15px;
     background-color: #8a2be8;
     color: #fff;
     border-radius: 5px;
+}
+
+#notifications {
+    width: 20px;
+    height: 20px;
+    background: #32cd32;
+    border-radius: 50%;
 }
 
 #dashboard-icon,

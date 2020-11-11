@@ -64,6 +64,12 @@ li {
   100% { transform: rotate(0); }
 }
 
+.bell-container {
+    position: absolute;
+    right: 190px;
+    top: 25px;
+}
+
  /* Main Styles --------------------- */
 .bell-icon {
     max-width: 100%;
@@ -83,6 +89,7 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-basis: 100%;
     background-color: #8a2be8;
     color: #fff;
     padding-left: 15px;
@@ -96,14 +103,15 @@ li {
 }
 
 #notifications {
+    position: relative;
+    bottom: 25px;
     width: 7px;
     height: 7px;
     background-color: #32cd32;
     border: 5px #32cd32;
     border-radius: 50%;
-    z-index: 2;
-    margin-left: -7px;
-    margin-bottom: 25px;
+    margin-left: 20px;
+
 }
 
 #dashboard-icon,
@@ -273,11 +281,23 @@ li {
 
 @media (min-width: 768px){
     .grid-container {
-        grid-template-rows: 70px 75px 1fr;
+        grid-template-rows: 70px 75px 2fr;
     }
+
+    .main-header {
+        grid-area: main-header;
+    }
+
+    .alert-banner {
+        grid-area: alert-banner;
+    }
+
     .main {
         display: grid;
-        grid-template-columns: 50%;
+        /* grid-template-columns: 50%; */
+        grid-template-areas: 
+        "main-header main-header"
+        "alert-banner alert-banner";
     }
 
     .navigation {
@@ -380,7 +400,7 @@ li {
         grid-area: nav;
     }
 
-    main {
+    .main {
         grid-area: main;
     }
 
@@ -389,6 +409,8 @@ li {
         grid-template-rows: 70px 1fr;
         grid-template-areas: 
             "head head"
+            "main-header main-header"
+            "alert-banner alert-banner"
             "nav main";
     }
 }

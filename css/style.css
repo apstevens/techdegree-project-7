@@ -210,9 +210,12 @@ li {
     margin: auto 15px auto auto;
 }
 
-.main-header-search input:focus {
+ input:focus,
+ textarea:focus {
     outline: none;
 }
+
+
 
 .traffic-header {
     display: flex;
@@ -251,8 +254,9 @@ li {
 }
 
 .members-text a {
-    font-size: .75em;
-    color: #d3ded3;
+    font-size: .8em;
+    color: #7477bf;
+    text-decoration: none;
 }
 
 .activity-text {
